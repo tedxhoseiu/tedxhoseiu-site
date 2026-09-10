@@ -267,7 +267,7 @@
 
     /* ── SPEAKERS ── */
     .speakers-sec{background:var(--white)}
-    .speakers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;background:rgba(0,0,0,.05)}
+    .speakers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;background:rgba(0,0,0,.05);border-radius:16px;overflow:hidden}
     .speaker-card{background:var(--white);overflow:hidden;transition:transform .3s,box-shadow .3s}
     .speaker-card:hover{transform:translateY(-6px);z-index:2;box-shadow:0 20px 48px rgba(0,0,0,.12)}
     .speaker-img{width:100%;aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:900;color:var(--white);position:relative;overflow:hidden;font-family:'Noto Sans JP',sans-serif}
@@ -384,16 +384,18 @@
       nav#nav{padding:0 20px}
       .nav-links{display:none}
       .hero-logo-abs{top:16px;left:20px;height:28px}
-      .hero-kv{width:56%;top:38%}
-      .hero-date{right:1%;top:52%}
-      .hero-date .d-label{font-size:8px}
-      .hero-date .d-num{font-size:14px}
+      .hero-kv{width:68%;top:28%}
+      .hero-date{right:1%;top:48%}
+      .hero-date .d-label{font-size:7px}
+      .hero-date .d-num{font-size:12px}
       .hero-date .d-qr{width:34px;height:34px;margin-top:5px}
       .hero-date .d-link{font-size:6px;white-space:nowrap;margin-top:4px}
       .container{padding:0 20px}
       section{padding:64px 0}
       .about-inner,.theme-inner{grid-template-columns:1fr;gap:40px}
       .speakers-grid{grid-template-columns:1fr;background:transparent;gap:16px}
+      .sns-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+      .sns-card{justify-content:center;padding:14px 16px;font-size:13px}
       .timeline::before{left:72px}
       .tl-time{min-width:72px}
       .footer-inner img{height:64px}
@@ -519,7 +521,7 @@
         <div class="speaker-info">
           <div class="speaker-name">ソン・ヨンア</div>
           <div class="speaker-role">法政大学 教授</div>
-          <p class="speaker-bio">法政大学理工学部デザイン工学科教授。アフェクティブデザイン・HCI・スペキュラティブデザインを専門とし、人とモノの感情的なインタラクションを研究。東京大学博士（学際情報学）取得後、サムスン電子UXデザイナーを経て現職。「ありうるかもしれない未来」に近づくためのデザインを、感性と共存の視点から語る。</p>
+          <p class="speaker-bio">法政大学デザイン工学部システムデザイン学科教授。アフェクティブデザイン・HCI・スペキュラティブデザインを専門とし、人とモノの感情的なインタラクションを研究。東京大学博士（学際情報学）取得後、サムスン電子UXデザイナーを経て現職。「ありうるかもしれない未来」に近づくためのデザインを、感性と共存の視点から語る。</p>
           <span class="speaker-tag">デザイン × 感性</span>
         </div>
       </div>
@@ -533,7 +535,6 @@
         </div>
       </div>
 
-    <p style="font-size:12px;color:rgba(0,0,0,.4);margin-top:24px;text-align:center">※ 登壇者情報は随時更新予定です&emsp;/&emsp;敬称略</p>
   </div>
 </section>
 
@@ -551,7 +552,7 @@
       <div class="tl-item reveal"><div class="tl-time t-pink">13:30</div><div class="tl-dot d-pink"></div><div><div class="tl-label">Talk — 総長</div><div class="tl-detail">ダイアナ・コー 総長によるトークセッション。</div></div></div>
       <div class="tl-item reveal"><div class="tl-time t-pink">14:00</div><div class="tl-dot d-pink"></div><div><div class="tl-label">Talk — ソン教授</div><div class="tl-detail">ソン・ヨンア 教授によるトークセッション。</div></div></div>
       <div class="tl-item reveal"><div class="tl-time t-green">14:30</div><div class="tl-dot d-green"></div><div><div class="tl-label">休憩 &amp; オフステージ巡回</div><div class="tl-detail">14:30〜15:30 展示ブースなどをお楽しみいただけます。</div></div></div>
-      <div class="tl-item reveal"><div class="tl-time t-pink">16:00</div><div class="tl-dot d-pink"></div><div><div class="tl-label">Talk — 木村</div><div class="tl-detail">学生登壇者・木村によるトークセッション。</div></div></div>
+      <div class="tl-item reveal"><div class="tl-time t-pink">16:00</div><div class="tl-dot d-pink"></div><div><div class="tl-label">Talk — 木村太一</div><div class="tl-detail">法政大学OB・木村太一によるトークセッション。</div></div></div>
       <div class="tl-item reveal"><div class="tl-time t-yellow">16:30</div><div class="tl-dot d-yellow"></div><div><div class="tl-label">クロージング（代表者挨拶、アンケート）</div><div class="tl-detail">代表者からのご挨拶とアンケートで締めくくります。</div></div></div>
       <div class="tl-item reveal"><div class="tl-time t-open">17:00</div><div class="tl-dot d-white"></div><div><div class="tl-label">アフターパーティー（ホワイエ）</div><div class="tl-detail">17:00〜18:00 登壇者・参加者との交流の場をご用意しています。</div></div></div>
     </div>
